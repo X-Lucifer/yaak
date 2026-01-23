@@ -1,8 +1,9 @@
 {
+  "productName": "Yaak",
+  "version": "2026.1.0",
   "build": {
     "features": [
-      "updater",
-      "license"
+      "updater"
     ]
   },
   "app": {
@@ -14,9 +15,7 @@
           "windows": [
             "*"
           ],
-          "permissions": [
-            "yaak-license:default"
-          ]
+          "permissions": []
         }
       ]
     }
@@ -39,6 +38,12 @@
     "createUpdaterArtifacts": true,
     "longDescription": "A cross-platform desktop app for interacting with REST, GraphQL, and gRPC",
     "shortDescription": "Play with APIs, intuitively",
+    "resources": [
+      "vendored/protoc",
+      "vendored/plugins",
+      "vendored/plugin-runtime",
+      "vendored/node"
+    ],
     "targets": [
       "app",
       "appimage",

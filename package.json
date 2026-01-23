@@ -65,7 +65,7 @@
     "prepare": "husky",
     "init": "npm install && npm run bootstrap",
     "start": "npm run app-dev",
-    "app-build": "tauri build",
+    "app-build": "tauri build -c crates-tauri\\yaak-app\\tauri.release.conf.json -t x86_64-pc-windows-msvc --no-sign",
     "app-dev": "node scripts/run-dev.mjs",
     "migration": "node scripts/create-migration.cjs",
     "build": "npm run --workspaces --if-present build",
